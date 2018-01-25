@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ninja to Cat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("img").click(function(){
+                var altSrc = $(this).attr("data-alt-src");
+                    $(this).attr("src", altSrc);
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div>
+        <img src="images/seahawk_eye0.jpeg" data-alt-src="images/seattle_logo0.jpeg" alt="seahawk puzzle0">
+        <img src="images/seahawk_eye1.jpeg" data-alt-src="images/seattle_logo1.jpeg" alt="seahawk puzzle1">
+        <img src="images/seahawk_eye2.jpeg" data-alt-src="images/seattle_logo2.jpeg" alt="seahawk puzzle2">
+        <img src="images/seahawk_eye3.jpeg" data-alt-src="images/seattle_logo3.jpeg" alt="seahawk puzzle3">
+        <img src="images/seahawk_eye4.jpeg" data-alt-src="images/seattle_logo4.jpeg" alt="seahawk puzzle4">
+    </div>
+</body>
+</html>
